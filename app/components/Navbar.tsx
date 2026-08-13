@@ -43,7 +43,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#donate"
+            href="/donate"
             className="rounded-md bg-cta-orange px-5 py-2 font-heading text-sm font-medium text-white transition hover:opacity-90"
           >
             Donate now
@@ -87,7 +87,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#donate"
+            href="/donate"
             onClick={() => setOpen(false)}
             className="rounded-md bg-cta-orange px-6 py-2 font-heading text-sm font-medium text-white"
           >

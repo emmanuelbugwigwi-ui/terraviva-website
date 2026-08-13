@@ -238,7 +238,7 @@ export default function About() {
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <a
-              href="#donate"
+              href="/financial-support"
               className="rounded-md bg-cta-orange px-6 py-3 font-heading font-medium text-white transition hover:opacity-90"
             >
               Financial support

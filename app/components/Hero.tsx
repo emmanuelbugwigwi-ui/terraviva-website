@@ -54,7 +54,7 @@ export default function Hero() {
 
         <div className="mt-10 flex flex-wrap justify-center gap-4">
           <a
-            href="#donate"
+            href="/donate"
             className="rounded-md bg-cta-orange px-6 py-3 font-heading font-medium text-white transition hover:opacity-90"
           >
             Donate now
