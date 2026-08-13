@@ -121,10 +121,10 @@ export default function Footer() {
       <div className="mx-auto mt-12 flex max-w-6xl flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 text-xs text-white/60 sm:flex-row">
         <p>© {new Date().getFullYear()} Terraviva. All rights reserved.</p>
         <div className="flex gap-4">
-          <a href="#" className="transition hover:text-white">
+          <a href="/privacy-policy" className="transition hover:text-white">
             Privacy policy
           </a>
-          <a href="#" className="transition hover:text-white">
+          <a href="/terms-and-conditions" className="transition hover:text-white">
             Terms &amp; conditions
           </a>
         </div>
