@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@theme {
+  --color-forest-green: #2E7D32;
+  --color-light-green: #66BB6A;
+  --color-deep-blue: #1565C0;
+  --color-cta-orange: #FF9800;
+  --color-soft-gray: #F5F5F5;
+  --color-dark-gray: #333333;
+
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+body {
+  color: var(--color-dark-gray);
+  background: #ffffff;
+}
+
+/* Splash screen animations */
+@keyframes splash-rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes splash-ring-pulse {
+  0% {
+    transform: scale(0.75);
+    opacity: 0.55;
+  }
+  100% {
+    transform: scale(1.9);
+    opacity: 0;
+  }
+}
+
+@keyframes splash-progress-fill {
+  0% {
+    width: 0%;
+  }
+  70% {
+    width: 92%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.splash-rise {
+  opacity: 0;
+  animation: splash-rise-in 0.6s ease-out forwards;
+}
+
+.splash-rise-1 {
+  animation-delay: 0.15s;
+}
+.splash-rise-2 {
+  animation-delay: 0.25s;
+}
+.splash-rise-3 {
+  animation-delay: 0.35s;
+}
+.splash-rise-4 {
+  animation-delay: 0.45s;
+}
+
+.splash-ring {
+  animation: splash-ring-pulse 2.1s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.splash-ring-delay {
+  animation-delay: 0.7s;
+}
+
+.splash-progress {
+  width: 0%;
+  animation: splash-progress-fill 2s ease-in-out forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .splash-rise,
+  .splash-ring,
+  .splash-progress {
+    animation: none !important;
+    opacity: 1 !important;
+    width: 100% !important;
+    transform: none !important;
+  }
+}
