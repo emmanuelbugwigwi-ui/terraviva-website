@@ -4,8 +4,10 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Terraviva",
   description: "Building climate-resilient communities for a sustainable future.",
+  verification: {
+    google: "xG6ZKh5ZFhxUa3HLUWLYSTTuc-mugOlORkpLkrheD7Y",
+  },
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{
