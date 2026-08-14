@@ -71,9 +71,11 @@ export default function ProjectsAdminPage() {
       setFiles([]);
       (document.getElementById("project-files") as HTMLInputElement | null)?.value &&
         ((document.getElementById("project-files") as HTMLInputElement).value = "");
-    } catch {
+    } catch (err) {
       setError(
-        "Could not save the project — check that Cloudinary and Firebase keys are set up in .env.local."
+        err instanceof Error
+          ? `Could not save the project — ${err.message}`
+          : "Could not save the project — check that Cloudinary and Firebase keys are set up."
       );
     } finally {
       setSaving(false);
