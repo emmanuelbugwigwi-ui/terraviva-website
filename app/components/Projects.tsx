@@ -24,8 +24,6 @@ export default function Projects() {
     return unsubscribe;
   }, []);
 
-  if (projects.length === 0) return null;
-
   return (
     <section id="projects" className="bg-white px-6 py-20 sm:px-10">
       <div className="mx-auto max-w-6xl">
@@ -37,6 +35,11 @@ export default function Projects() {
           Projects
         </h2>
 
+        {projects.length === 0 ? (
+          <p className="mt-8 text-sm text-dark-gray/60">
+            No projects have been posted yet. Check back soon.
+          </p>
+        ) : (
         <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((project) => {
             const cover = project.media[0];
@@ -101,6 +104,7 @@ export default function Projects() {
             );
           })}
         </div>
+        )}
       </div>
     </section>
   );
