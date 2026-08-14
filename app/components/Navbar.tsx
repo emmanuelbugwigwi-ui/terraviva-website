@@ -9,7 +9,6 @@ const navLinks = [
   { label: "Programs", href: "#programs" },
   { label: "Projects", href: "#projects" },
   { label: "Impact", href: "#impact" },
-  { label: "News", href: "#news" },
   { label: "Contact", href: "#contact" },
 ];
 
