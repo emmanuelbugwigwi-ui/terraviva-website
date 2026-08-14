@@ -23,6 +23,19 @@ export interface Program {
   items: string[];
 }
 
+export interface ProjectMedia {
+  url: string;
+  resourceType: string; // "image" | "video"
+}
+
+export interface Project {
+  id: string;
+  title: string;
+  description: string;
+  media: ProjectMedia[];
+  createdAt: number;
+}
+
 export interface AboutContent {
   aboutHeading: string;
   aboutIntroParagraph1: string;
